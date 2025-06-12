@@ -1,0 +1,98 @@
+/* Home.css */
+.books-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.books-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.add-book-btn {
+  color: #1e40af;
+  font-size: 2.5rem;
+  transition: transform 0.2s ease;
+}
+
+.add-book-btn:hover {
+  transform: scale(1.1);
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.books-table th {
+  background-color: #1e40af;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.books-table td {
+  padding: 12px;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.books-table tr:hover td {
+  background-color: #f3f4f6;
+}
+
+.books-table th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.books-table th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.action-btn {
+  transition: transform 0.2s ease;
+  margin: 0 5px;
+}
+
+.action-btn:hover {
+  transform: scale(1.2);
+}
+
+.details-btn {
+  color: #10b981;
+}
+
+.edit-btn {
+  color: #f59e0b;
+}
+
+.delete-btn {
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+  
+  .books-table th, 
+  .books-table td {
+    padding: 8px;
+  }
+  
+  .action-btn {
+    margin: 0 3px;
+    font-size: 1.2rem;
+  }
+}
