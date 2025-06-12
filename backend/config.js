@@ -1,2 +1,2 @@
-export const PORT = 5555;
+export const PORT = 5555;//backend port number
 export const mongoDBURL = "mongodb://localhost:27017/BOOK";
